@@ -1,3 +1,3 @@
 # XYCornerRadius
-高效的设置UIView，UIimageView的圆角
+高效的设置UIimageView的圆角
 
