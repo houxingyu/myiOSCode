@@ -15,6 +15,8 @@
 		D22564BE1E837FEA0066D1D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22564BC1E837FEA0066D1D2 /* LaunchScreen.storyboard */; };
 		D22564C91E837FEA0066D1D2 /* XYCornerRadiusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D22564C81E837FEA0066D1D2 /* XYCornerRadiusTests.m */; };
 		D22564D41E837FEA0066D1D2 /* XYCornerRadiusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D22564D31E837FEA0066D1D2 /* XYCornerRadiusUITests.m */; };
+		D22564E31E83A2ED0066D1D2 /* UIImage+circle.m in Sources */ = {isa = PBXBuildFile; fileRef = D22564E21E83A2ED0066D1D2 /* UIImage+circle.m */; };
+		D22564E71E83A8190066D1D2 /* callAd-03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22564E61E83A8190066D1D2 /* callAd-03.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		D22564CF1E837FEA0066D1D2 /* XYCornerRadiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYCornerRadiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22564D31E837FEA0066D1D2 /* XYCornerRadiusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYCornerRadiusUITests.m; sourceTree = "<group>"; };
 		D22564D51E837FEA0066D1D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D22564E11E83A2ED0066D1D2 /* UIImage+circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+circle.h"; sourceTree = "<group>"; };
+		D22564E21E83A2ED0066D1D2 /* UIImage+circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+circle.m"; sourceTree = "<group>"; };
+		D22564E61E83A8190066D1D2 /* callAd-03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "callAd-03.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 				D22564B21E837FEA0066D1D2 /* AppDelegate.m */,
 				D22564B41E837FEA0066D1D2 /* ViewController.h */,
 				D22564B51E837FEA0066D1D2 /* ViewController.m */,
+				D22564E11E83A2ED0066D1D2 /* UIImage+circle.h */,
+				D22564E21E83A2ED0066D1D2 /* UIImage+circle.m */,
+				D22564E61E83A8190066D1D2 /* callAd-03.jpg */,
 				D22564B71E837FEA0066D1D2 /* Main.storyboard */,
 				D22564BA1E837FEA0066D1D2 /* Assets.xcassets */,
 				D22564BC1E837FEA0066D1D2 /* LaunchScreen.storyboard */,
@@ -207,7 +215,8 @@
 				TargetAttributes = {
 					D22564AA1E837FEA0066D1D2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = WFHCPNZ7UG;
+						ProvisioningStyle = Manual;
 					};
 					D22564C31E837FEA0066D1D2 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -247,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22564BE1E837FEA0066D1D2 /* LaunchScreen.storyboard in Resources */,
+				D22564E71E83A8190066D1D2 /* callAd-03.jpg in Resources */,
 				D22564BB1E837FEA0066D1D2 /* Assets.xcassets in Resources */,
 				D22564B91E837FEA0066D1D2 /* Main.storyboard in Resources */,
 			);
@@ -274,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22564B61E837FEA0066D1D2 /* ViewController.m in Sources */,
+				D22564E31E83A2ED0066D1D2 /* UIImage+circle.m in Sources */,
 				D22564B31E837FEA0066D1D2 /* AppDelegate.m in Sources */,
 				D22564B01E837FEA0066D1D2 /* main.m in Sources */,
 			);
@@ -422,10 +433,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WFHCPNZ7UG;
 				INFOPLIST_FILE = XYCornerRadius/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syt51.net.appstore.personal.XYCornerRadius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c9746b07-bab0-45d9-98ed-3f61bd5d6b98";
+				PROVISIONING_PROFILE_SPECIFIER = DEV_FOR_ALL;
 			};
 			name = Debug;
 		};
@@ -433,10 +449,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = VMX7EDC863;
 				INFOPLIST_FILE = XYCornerRadius/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.syt51.net.appstore.personal.XYCornerRadius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "51c5610e-efbf-41c9-9a3a-405271b8a2ff";
+				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
 			};
 			name = Release;
 		};

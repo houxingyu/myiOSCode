@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIImage+circle.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -17,6 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    UIImage *image = [[UIImage imageNamed:@"callAd-03.jpg"] circleImage];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"callAd-03" ofType:@"jpg"];
+    UIImage *thumbnail = [UIImage imageWithContentsOfFile:path];
+    
+    self.imageView.contentMode = UIViewContentModeScaleAspectFill;
+    //self.imageView.backgroundColor = [UIColor redColor];
+    [self.imageView setImage:image];
 }
 
 
@@ -24,6 +36,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
