@@ -22,6 +22,7 @@
 		D22564471E82706E0066D1D2 /* toolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D22564461E82706E0066D1D2 /* toolsTests.m */; };
 		D22564521E82706F0066D1D2 /* toolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D22564511E82706F0066D1D2 /* toolsUITests.m */; };
 		D22564621E8270E00066D1D2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D22564611E8270E00066D1D2 /* NSString+Extension.m */; };
+		D22BFE921F344F0F005D7955 /* NSDictionary+NilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = D22BFE911F344F0F005D7955 /* NSDictionary+NilSafe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		D22564531E82706F0066D1D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D22564601E8270E00066D1D2 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		D22564611E8270E00066D1D2 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		D22BFE901F344F0F005D7955 /* NSDictionary+NilSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NilSafe.h"; sourceTree = "<group>"; };
+		D22BFE911F344F0F005D7955 /* NSDictionary+NilSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NilSafe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 		D225645F1E8270E00066D1D2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D22BFE901F344F0F005D7955 /* NSDictionary+NilSafe.h */,
+				D22BFE911F344F0F005D7955 /* NSDictionary+NilSafe.m */,
 				D20354861E84B6BC00F4DC51 /* UIDevice+DeviceType.h */,
 				D20354871E84B6BC00F4DC51 /* UIDevice+DeviceType.m */,
 				D22564601E8270E00066D1D2 /* NSString+Extension.h */,
@@ -324,6 +329,7 @@
 				D20354881E84B6BC00F4DC51 /* UIDevice+DeviceType.m in Sources */,
 				D20354971E84B97000F4DC51 /* NSDate+Extension.m in Sources */,
 				D225642E1E82706E0066D1D2 /* main.m in Sources */,
+				D22BFE921F344F0F005D7955 /* NSDictionary+NilSafe.m in Sources */,
 				D22564621E8270E00066D1D2 /* NSString+Extension.m in Sources */,
 				D203548E1E84B87300F4DC51 /* UIImage+Entension.m in Sources */,
 			);
