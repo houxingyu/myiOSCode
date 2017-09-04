@@ -66,7 +66,14 @@
 didReceiveRemoteNotification:(NSDictionary *)userInfo
 fetchCompletionHandler:
 (void (^)(UIBackgroundFetchResult))completionHandler {
-    
+    UIApplicationState state = [UIApplication sharedApplication].applicationState;
+    if (state == UIApplicationStateActive) {
+        //app在前台
+  
+    }
+    else if (state == UIApplicationStateInactive){
+       
+    }
     NSLog(@"iOS7及以上系统，收到通知:%@", userInfo);
     completionHandler(UIBackgroundFetchResultNewData);
 }
